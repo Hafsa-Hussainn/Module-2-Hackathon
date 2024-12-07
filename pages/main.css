@@ -1,0 +1,187 @@
+*{
+    overflow-x: hidden !important;
+}
+body{
+    overflow-x: hidden;
+}
+
+.navbar {
+    flex-wrap: wrap !important;
+    top: 0;
+    left: 0;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between ;
+    align-items: center;
+    padding: 1rem;
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+
+}
+
+#r-div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+   
+}
+
+.navbar.sticky {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    margin-right: 1rem;
+    margin-left: 3rem;
+}
+
+
+ .search-bar {
+    height: 2rem;
+    width: 20rem;
+    border-radius: 3rem ;
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    border: 2px solid black;
+    
+}
+
+.search-bar input {
+    width: 20rem;
+    height: 2rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 3rem;
+    font-size: 1rem;
+} 
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.5s ease;
+}
+
+.nav-links a:hover {
+    color: #666;
+}
+
+#sec-div {
+    margin-top: 20px;
+    margin-left: 3rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#trd-div {
+    margin-left: 40rem;
+}
+
+#button {
+background-color: #1C5CFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    font-size: 16px; 
+    font-weight: bold; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+#cr-blog{
+    margin-left: 3rem;
+    align-items: center;
+}
+
+#list-blog{
+    margin-left: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+#rig-div {
+    margin-right: 10rem;
+    margin-left: 30rem;
+    width: 40rem;
+    
+   
+   
+}
+
+
+/* Existing CSS remains the same */
+
+/* Media Queries for Responsive UI */
+
+@media (max-width: 1200px) {
+    #trd-div {
+        margin-left: 10rem;
+    }
+    #rig-div {
+        margin-left: 10rem;
+        width: 30rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #sec-div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #list-blog {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #trd-div {
+        margin-left: 0;
+    }
+    #rig-div {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-bar {
+        width: 100%;
+    }
+    .search-bar input {
+        width: 100%;
+    }
+    #button {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo img {
+        width: 10rem;
+        height: 10rem;
+    }
+    #rig-div {
+        grid-template-columns: 1fr;
+    }
+}
